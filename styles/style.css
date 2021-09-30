@@ -1,0 +1,238 @@
+/* ------------------------------Genereal Style------------------------------*/
+html {
+  box-sizing: border-box;
+  background-color: #F7F9F7;
+  color: white;
+  font-family: "Andika", sans-serif;
+  font-size: 10px;
+  color: #094D92 ;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+/* ----------------------------------Typography------------------------------- */
+a:not(.not) {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+  outline: none;
+  padding: 2px 1px 0;
+  border-radius: 7px;
+  padding: 10px;
+}
+a:link {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+}
+a:visited {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+}
+a:focus {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+}
+a:active {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+}
+a:not(.not):hover {
+  text-decoration: none;
+  color: #094D92;
+  font-size: 1.6em;
+  background-color: #8CC2F8;
+  
+}
+h1 {
+  font-size: 6em;
+  letter-spacing: 2;
+  font-family: "Amatic SC", cursive;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4em;
+  padding-top: 40px;
+  font-family: "Amatic SC", cursive;  
+}
+button {
+  display: inline-block;
+  padding: 0.7em 2em;
+  border: 0.1em solid #094D92;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #094D92;
+  text-align: center;
+  transition: all 0.5s;
+  margin-top: 20px;
+  background-color: transparent;
+}
+button:hover {
+  color: #F7F9F7;
+  background-color: #8CC2F8;
+}
+
+/* ---------------------------------------Header----------------------------------------- */
+header {
+  background-color: #F7F9F7;
+  height: 20vh;
+}
+header ul {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+header ul > li:nth-of-type(1) {
+  flex: 4;
+}
+
+li {
+  margin-top: 20px;
+  list-style-type: none;
+  flex: 1;
+}
+i {
+  font-size: 3em;
+} 
+
+/* --------------------------------Section 1 -------------------------------------- */
+article:nth-of-type(1) {
+  height: 80vh;
+}
+.article-one {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.article-one  img {
+  height: 250px;
+  width: 500px;
+  margin-top: 60px;
+  margin-left: 40px;
+  border: 2px solid #094D92;
+  background-color: #094D92;
+}
+.article-one  p {
+    width: 500px;
+    font-size: 1.6em;
+}
+/* --------------------------------Section 2 -------------------------------------- */
+article:nth-of-type(2) {
+  background-color: #094D92;
+  color: #F7F9F7;
+  height: 105vh;
+}
+article:nth-of-type(2) > ul > li > img {
+  height: 250px;
+  width: 200px;
+  border: 2px solid #F7F9F7;
+}
+article:nth-of-type(2) > ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center; 
+  width: 70%;
+}
+article:nth-of-type(2) > ul > li > p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+
+/* --------------------------------Section 3 -------------------------------------- */
+article:nth-of-type(3) {
+  background-color: #D81E5B;
+  height: 60vh;
+  color: #F7F9F7;
+  position: relative;
+}
+article:nth-of-type(3) > div {
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+}
+article:nth-of-type(3) > div > blockquote {
+  font-size: 5em;
+  text-align:justify;
+  font-family: "Amatic SC", cursive;
+}
+
+article:nth-of-type(3) > div > p {
+  text-align: right;
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* --------------------------------Section 4 -------------------------------------- */
+article:nth-of-type(4) {
+  height: 50vh;
+  position: relative;
+}
+article:nth-of-type(4) > div {
+  margin: auto;
+  width: 800px;
+  height: 150px;
+  border: 2px solid #094D92;
+  border-radius: 7px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.article-four {
+  display: flex;
+}
+.article-four h2{
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.article-four p{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.6em;
+  margin-top: 10px;
+}
+
+.article-four button {
+ margin-top: 50px;
+ margin-left: 80px;
+}
+
+/* --------------------------------Footer-------------------------------------- */
+footer {
+  background-color: #094D92;
+  height: 20vh;
+  color: #F7F9F7;
+  text-align: center;
+  margin: 0 auto;
+}
+footer i {
+  font-size: 1em;
+}
+.fa-heart{
+  color: #D81E5B;
+}
+footer p {
+  font-size: 1.4em;
+  padding-top: 50px;
+}
